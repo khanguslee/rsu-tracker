@@ -1,3 +1,5 @@
+const eslintPluginPrettierRecommended = require("eslint-plugin-prettier/recommended");
+
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -7,6 +9,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
+    eslintPluginPrettierRecommended,
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
